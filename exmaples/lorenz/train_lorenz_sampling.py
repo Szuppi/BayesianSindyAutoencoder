@@ -1,5 +1,6 @@
 import sys
-sys.path.append("../../src")
+sys.path.append("/home/szupernikusz/Projects/BayesianSindyAutoencoder/src")
+print(f"The system path is:\n{sys.path}")
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 import datetime
