@@ -5,11 +5,12 @@ import numpy as np
 from scipy.integrate import odeint
 from scipy.signal import savgol_filter
 
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "src"))
+#print(f"The root dir is: {ROOT_DIR}")
 if ROOT_DIR not in sys.path:
     sys.path.append(ROOT_DIR)
 
-from sindy import library_size
+from sindy_utils import library_size
 
 # -----------------------------------------------------------------------------
 # Nested mixer cache: ensures depth-1 ⊂ depth-2 ⊂ depth-3 ⊂ depth-4
